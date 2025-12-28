@@ -7,7 +7,7 @@ app = FastAPI(title="DevOps Demo API")
 @app.get("/")
 def root():
     return {
-        "message": "Hello from FastAPI",
+        "message": "Hello from FastAPI v2",
         "hostname": socket.gethostname(),
         "environment": os.getenv("ENV", "dev")
     }
